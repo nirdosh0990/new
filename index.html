@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routine</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 28px;
+            padding: 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .sub {
+            color: #64748b;
+            margin-bottom: 1.8rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #764ba2;
+            padding-left: 0.75rem;
+        }
+
+        .routine-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.9rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .time {
+            min-width: 80px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #764ba2;
+            background: #f3e8ff;
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .task {
+            flex: 1;
+        }
+
+        .task-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.2rem;
+        }
+
+        .task-desc {
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+
+        .emoji {
+            font-size: 1.1rem;
+            margin-right: 0.3rem;
+        }
+
+        .footer-note {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                padding: 1.2rem;
+            }
+            .routine-item {
+                flex-direction: column;
+                gap: 0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>
+                <span>📋</span> My Daily Rhythm
+            </h1>
+            <div class="sub">simple · balanced · repeatable</div>
+
+            <div class="routine-item">
+                <div class="time">06:30 AM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🌅</span> Morning Reset</div>
+                    <div class="task-desc">Wake up, drink water, stretch, no phone for 15 min</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">07:00 AM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">📖</span> Deep Focus Block</div>
+                    <div class="task-desc">Most important task / study session (90 min)</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">08:30 AM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🥣</span> Breakfast & Plan</div>
+                    <div class="task-desc">Eat well, review daily goals, prioritize</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">09:30 AM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">💻</span> Work / Study Sprint</div>
+                    <div class="task-desc">Pomodoro method — 50 min work, 10 min break</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">12:30 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🍲</span> Lunch & Recharge</div>
+                    <div class="task-desc">Healthy meal, walk outside, no screens</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">02:00 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">⚡</span> Afternoon Tasks</div>
+                    <div class="task-desc">Meetings, emails, creative work, collaboration</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">05:00 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🧹</span> Wrap & Reflect</div>
+                    <div class="task-desc">Tidy workspace, note tomorrow's priorities</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">06:00 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🏃</span> Movement / Hobby</div>
+                    <div class="task-desc">Gym, walk, read, or creative hobby</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">07:30 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🍽️</span> Dinner & Connect</div>
+                    <div class="task-desc">Family/friends time, meaningful conversation</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">09:00 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">🌙</span> Wind Down</div>
+                    <div class="task-desc">No screens, journal, light stretching, prepare for sleep</div>
+                </div>
+            </div>
+
+            <div class="routine-item">
+                <div class="time">10:30 PM</div>
+                <div class="task">
+                    <div class="task-title"><span class="emoji">😴</span> Sleep</div>
+                    <div class="task-desc">7-8 hours of rest — consistent bedtime</div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                ✨ adapt to your lifestyle · be kind to yourself ✨
+            </div>
+        </div>
+    </div>
+</body>
+</html>
